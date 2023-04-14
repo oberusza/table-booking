@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ### Navigation bar ### */
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 4em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+nav .menuicon {
+    display: none;
+}
+
+nav .logo {
+    align-self: center;
+    height: 3em;
+    margin-right: 12em;
+}
+
+nav .menuitems {
+    display: flex;
+    align-self: center;
+}
+
+nav .menuitems-hide {
+    display: flex;
+    align-self: center;
+}
+
+nav ul {
+    display: inline-flex;
+    align-self: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #495E57;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav a.basket {
+    display: flex;
+    align-self: center;
+}
+
+nav a.basket img {
+    height: 2em;
+}
+
+/* ### Header ### */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #495E57;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+header .introduction {
+    width: 422px;
+    float: left;
+    margin-right: 5em;
+}
+
+header .introduction h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 4em;
+    color: #F4CE14;
+}
+
+header .introduction h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5em;
+    color: #EDEFEE;
+}
+
+header .introduction p {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.125em;
+    color: #FFF;
+}
+
+header img {
+    height: 20em;
+    width: 24em;
+    object-fit: cover;
+    border-radius: .5em;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: .5em;
+    line-height: 21px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-yellow {
+    background-color: #F4CE14;
+    color: #000;
+}
+
+.button-yellow:hover {
+    background-color: #EE9972;
+    color: #000;
+}
+
+.button-olive {
+    background-color: #495E57;
+    color: #FFF;
+}
+
+.button-olive:hover {
+    background-color: #EE9972;
+    color: #000;
+}
+
+/* ### Reservation ### */
+
+.reservation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.reservation h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 13em;
+}
+
+.reservation p {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation form label {
+    align-self: center;
+}
+
+.reservation form input {
+    justify-content: center;
+    align-self: center;
+    width: 32em;
+    margin-top: .25em;
+    margin-bottom: 1em;
+    padding: .25em;
+    background-color: #e9e9ed;
+    line-height: 2.25em;
+    border-radius: .5em;
+    border-color: black;
+}
+
+.reservation form input.agreed {
+    display: inline;
+    width: auto;
+}
+
+.reservation form .agreed-text {
+    margin-left: 1em;
+}
+
+.reservation .form-buttons {
+    align-self: center;
+    margin-top: 2em;
+}
+
+.reservation .form-buttons button:not(:last-child) {
+    margin-right: 2.25em;
+}
+
+.reservation .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation .form-summary p {
+    align-self: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.reservation .circle {
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    line-height: 2em;
+    border-radius: 50%;
+    font-size: 10em;
+    text-align: center;
+    background-color: #495E57;
+    color: #F4CE14;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ### Main ### */
+
+main .specials {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+main .specials .specials-header {
+    display: flex;
+    justify-content: center;
+}
+
+main .specials h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-right: 13em;
+}
+
+main .specials .cards {
+    display: flex;
+    justify-content: center;
+}
+
+main .specials .card {
+    width: 15em;
+    height: 25em;
+    background-color: #EDEFEE;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+}
+
+main .specials .cards .card:not(:last-child) {
+    margin-right: 5em;
+}
+
+main .specials .cards .card img {
+    height: 10em;
+    width: 15em;
+    object-fit: cover;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+}
+
+main .specials .cards .card .card-body {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+main .specials .cards .card .card-body .card-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+main .specials .cards .card h2.foodname {
+    font-family: 'Markazi Text', serif;
+}
+
+main .specials .cards .card h2.price {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    color: #EE9972;
+    align-self: center;
+}
+
+main .specials .cards .card p {
+    height: 9em;
+    font-family: 'Karla', sans-serif;
+}
+
+main .specials .cards .card a {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+main .specials .cards .card a:hover {
+    text-decoration: underline;
+}
+
+main .testimonials {
+    background-color: #F4CE14;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+main .testimonials h1 {
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+main .testimonials .ratings {
+    display: flex;
+    justify-content: center;
+}
+
+main .testimonials .rating {
+    width: 10em;
+    text-align: center;
+}
+
+main .testimonials .rating:not(:last-child) {
+    margin-right: 5em;
+}
+
+main .testimonials h2 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+main .testimonials p {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+main .about {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+main .about .text {
+    width: 20em;
+}
+
+main .about .text h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 4em;
+}
+
+main .about .text h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5em;
+    margin-top: -.5em;
+    margin-bottom: .75em;
+}
+
+main .about .text p {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+main .about .images {
+    margin-top: 1em;
+    margin-left: 17em;
+}
+
+main .about .images img {
+    width: 14em;
+    height: 14em;
+    object-fit: cover;
+    border-radius: .5em;
+}
+
+main .about .images .image1 {
+    position: absolute;
+    display: inline;
+    margin-top: 4.25em;
+}
+
+main .about .images .image2 {
+    position: relative;
+    margin-left: 4.25em;
+}
+
+/* ### Footer ### */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    background-color: #495E57;
+}
+
+footer img {
+    height: 6em;
+    align-self: center;
+    margin-right: 8em;
+}
+
+footer .linklist:not(:last-child) {
+    margin-right: 3em;
+}
+
+footer p {
+    font-weight: bold;
+    color: #FFF;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: .75em;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ### ### ### Mobile view ### ### ### */
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        display: block;
+    }
+
+    nav .menuicon {
+        position: absolute;
+        display: block;
+        top: 1.75em;
+        left: 1.25em;
+    }
+
+    nav img {
+        display: block;
+    }
+
+    nav .logo {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: inline;
+    }
+
+    nav ul li {
+        margin-bottom: .5em;
+    }
+
+    nav .menuitems {
+        display: inline-block;
+        background-color: #FFF;
+        padding-left: 1.25em;
+        padding-bottom: 1em;
+    }
+
+    nav .menuitems-hide {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .introduction {
+        width: auto;
+        margin-right: 0;
+        padding: 1em;
+    }
+
+    header img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .reservation {
+        display: block;
+        margin-bottom: 2em;
+    }
+    
+    .reservation h2 {
+        margin-bottom: .5em;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .reservation p {
+        margin-top: 1.5em;
+        margin-bottom: 2.5em;
+        padding: .5em;
+    }
+
+    .reservation form label {
+        margin-left: .5em;
+    }
+    
+    .reservation form input {
+        display: block;
+        width: 92%;
+        margin-top: .25em;
+        margin-bottom: 1em;
+        margin-left: .25em;
+        padding: .25em;
+    }
+    
+    .reservation form input.agreed {
+        display: inline;
+        width: auto;
+    }
+    
+    .reservation form .agreed-text {
+        margin-left: 1em;
+    }
+    
+    .reservation .form-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-self: auto;
+    }
+    
+    .reservation .form-buttons button:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .reservation .form-buttons button {
+        width: 10em;
+    }
+
+    main .specials .specials-header {
+        display: block;
+    }
+    
+    main .specials h1 {
+        text-align: center;
+        margin-bottom: .5em;
+        margin-right: 0;
+    }
+
+    main .specials button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1em;
+    }
+
+    main .specials .cards {
+        flex-direction: column;
+    }
+
+    main .specials .card {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    
+    main .specials .cards .card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+    
+    main .specials .cards .card img {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    main .testimonials .ratings {
+        display: block;
+    }
+
+    main .testimonials .rating {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    main .testimonials .rating:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    main .about {
+        display: block;
+        padding: 1.25em;
+    }
+    
+    main .about .text {
+        width: 100%;
+    }
+    
+    main .about .text h2 {
+        font-family: 'Markazi Text', serif;
+        font-size: 2.5em;
+        margin-top: -.5em;
+        margin-bottom: .75em;
+    }
+    
+    main .about .images {
+        width: 18em;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    main .about .images img {
+        width: 14em;
+        height: 14em;
+        object-fit: cover;
+        border-radius: .5em;
+    }
+
+    footer {
+        display: block;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        background-color: #495E57;
+    }
+    
+    footer img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    footer .linklist {
+        margin-left: 2em;
+    }
+    
+    footer .linklist:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+}
